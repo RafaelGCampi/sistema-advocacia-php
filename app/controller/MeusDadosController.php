@@ -26,6 +26,7 @@ class MeusDadosController extends Controller
                 
                 session_start();
                 $_SESSION['usuario']= $usuario;
+                $_SESSION['nome']= $usuario->getNome();
                 //var_dump($_SESSION['usuario']);
                 header("Location: http://localhost:8000/home", 200);exit;
                 //return $this->render('admin//home.php', 'frontview.php');

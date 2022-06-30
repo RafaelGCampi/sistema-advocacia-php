@@ -177,7 +177,7 @@
                     var result = JSON.parse(response);
                         $('#data_limite').val(result.processo.date);
                         $('#processo').val(result.processo.processo);
-                        $('#situacao').val(result.processo.situacao_id);
+                        $('#situacaoSelect').val(result.processo.situacao_id);
                         $('#observacao').val(result.processo.observacao);
                         $('#tipo_processo').val(result.processo.tipo_processo_id);
                         $('#post_criar_processo_form').attr('onsubmit', 'processo_update(this,' + processo_id + ')');

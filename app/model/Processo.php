@@ -213,11 +213,11 @@ class Processo extends Model
             [
                 'processo' => [
                     'id_processo' => $this->getId_processo(),
-                    'processo' => $this->getProcesso(),
-                    'tipo_processo_id' => $this->getProcesso_id(),
+                    'processo' => intval($this->getProcesso()),
+                    'tipo_processo_id' => intval($this->getTipo_processo_id()),
                     'observacao' => $this->getObservacao(),
                     'date' => $this->getDate(),
-                    'situacao_id' => $this->getSituacao_id(),
+                    'situacao_id' => intval($this->getSituacao_id()),
                 ]
             ]
         );

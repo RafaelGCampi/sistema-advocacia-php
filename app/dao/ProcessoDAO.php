@@ -76,12 +76,13 @@ class ProcessoDAO {
 
     public function update(Processo $processo, $processo_id){
         $query = "UPDATE processo SET 
-                processo = '".$processo->getProcesso()."', 
+                processo = ".$processo->getProcesso().", 
                 situacao_id = ".$processo->getSituacao_id().", 
                 tipo_processo_id = ".$processo->getTipo_processo_id().", 
                 observacao = '".$processo->getObservacao()."', 
                 date = '".$processo->getDate()."'
             WHERE (id_processo = ".$processo_id.")";
+            var_dump($query);
         try {
             $sth = $this->database->connectPDO()->prepare($query);
             return $sth->execute();

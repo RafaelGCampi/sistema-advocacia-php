@@ -16,9 +16,9 @@
             <div class="col-4">
                 <div class="form-group">
                     <label for="cpf" class="col-form-label">Cpf:</label>
-                    <input name="cpf" id="cpf" class="form-control" onkeypress="formatar('###.###.###-##', this)"
+                    <input name="cpf" id="cpf" class="form-control"
                            maxlength="14"
-                           onkeydown="mascaraCpf()" placeholder="Digite um cpf" required>
+                          placeholder="Digite um cpf" required>
                 </div>
             </div>
             <div class="col-4">

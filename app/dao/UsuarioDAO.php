@@ -51,7 +51,7 @@ class UsuarioDAO {
     }
 
     public function getLogin($login){
-        $query = "SELECT * FROM usuarios WHERE login='$login' or email='$login'";
+        $query = "SELECT * FROM usuarios WHERE (login='$login' or email='$login') and ativo =1";
         $sth = $this->database->connectPDO()->prepare($query);
         $sth->execute();
         if($result = $sth->fetchObject('app\\model\\Usuario')){
@@ -66,13 +66,13 @@ class UsuarioDAO {
         $query = "
             INSERT INTO usuarios (
                 login,
-                senha, 
+               
                 nome, 
                 email,
                 tipo_funcionario
             ) VALUES (
                 '".$usuario->getLogin()."',
-                '".$usuario->getSenha()."',
+                
                 '".$usuario->getNome()."',
                 '".$usuario->getEmail()."',
                 '".$usuario->getTipo_funcionario()."'

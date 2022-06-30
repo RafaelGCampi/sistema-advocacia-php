@@ -66,7 +66,7 @@ class ProcessoController extends Controller {
         if (($_SERVER['REQUEST_METHOD'] == 'POST')
             AND isset($_GET['processo_id'])){
             $processoDAO = new ProcessoDAO();
-            $processo_id = (int) $_POST['processo_id'];
+            $processo_id = intval($_GET['processo_id']);
             $processo = new Processo();
             $processo->setProcesso($_POST['processo']);
             $processo->setSituacao_id($_POST['situacao']);
