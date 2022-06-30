@@ -1,0 +1,16 @@
+{
+  "name": "rafael/sistema-advocacia-php",
+  "description": "Projeto de estudos PHP/MVC",
+  "authors": [
+    {
+      "name": "Rafael Campi",
+      "email": "rafael.g.campi@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.8"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}
