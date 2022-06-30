@@ -37,7 +37,7 @@ Criada uma estrutura de pastas para facilitar a organização do projeto.
 Clone o projeto para o seu repositório local:
 
 ```
-git clone https://github.com/lucasapoena/PHP-CRUD-MVC
+git clone 
 ```
 
 - Executar a query **app/config/init.sql** ou importar o arquivo no phpMyAdmin para criar as tables.
@@ -59,4 +59,3 @@ define('DB_DATABASE', 'db_loja');
 
 ### License
 
-MIT © 2019 [Lucas Apoena](https://github.com/lucasapoena/) and [contributors](https://github.com/lucasapoena/PHP-CRUD-MVC/graphs/contributors).
